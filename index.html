@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product CRUD System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="top-controls">
+        <button id="langToggleBtn" class="control-btn">عربي</button>
+        <button id="themeToggleBtn" class="control-btn">🌙 Dark Mode</button>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 data-i18n="mainTitle">🛒 Product CRUD System</h1>
+            <p data-i18n="subTitle">Manage your products easily</p>
+        </div>
+
+    
+
+        <div class="section">
+
+            <div class="section-title" data-i18n="productInfoTitle">
+                ◈ Product Information
+            </div>
+
+            <div class="content">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label><span data-i18n="productCodeLabel">Product Code</span> <span>*</span></label>
+                        <input type="text" id="codeInput" data-i18n-placeholder="productCodePlaceholder" placeholder="Enter product code">
+                    </div>
+
+                    <div class="form-group">
+                        <label><span data-i18n="productPriceLabel">Product Price</span> <span>*</span></label>
+                        <input type="number" id="priceInput" data-i18n-placeholder="productPricePlaceholder" placeholder="Enter product price">
+                    </div>
+
+                    <div class="form-group">
+                        <label><span data-i18n="productCategoryLabel">Product Category</span> <span>*</span></label>
+                        <input type="text" id="categoryInput" data-i18n-placeholder="productCategoryPlaceholder" placeholder="Enter product category">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label><span data-i18n="productDescLabel">Product Description</span> <span>*</span></label>
+                    <textarea id="descriptionInput" data-i18n-placeholder="productDescPlaceholder" placeholder="Enter product description..."></textarea>
+                </div>
+
+                
+
+                <div class="buttons">
+                    <button class="add-btn" data-i18n="addBtn">+ Add Product</button>
+                    <button class="update-main" data-i18n="updateBtn">✎ Update Product</button>
+                </div>
+
+            </div>
+        </div>
+
+      
+
+        <div class="section">
+
+            <div class="section-title" data-i18n="searchTitle">
+                ⌕ Search Products
+            </div>
+
+            <div class="content">
+                <input
+                    class="search-input"
+                    type="text"
+                    data-i18n-placeholder="searchPlaceholder"
+                    placeholder="⌕  Search by Code..."
+                >
+            </div>
+
+        </div>
+
+   
+
+        <div class="section">
+
+            <div class="section-title" data-i18n="listTitle">
+                ▦ Products List
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th data-i18n="thNum">#</th>
+                            <th data-i18n="thCode">Code</th>
+                            <th data-i18n="thPrice">Price</th>
+                            <th data-i18n="thCategory">Category</th>
+                            <th data-i18n="thDesc">Description</th>
+                            <th data-i18n="thActions">Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                      
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
